@@ -140,7 +140,7 @@ const Auth = () => {
     const addressRef = useRef<HTMLInputElement | null>(null);
 
     // 페이지 번호 상태
-    const [page, setPage] = useState<1 | 2>(2);
+    const [page, setPage] = useState<1 | 2>(1);
 
     // 이메일 상태
     const [email, setEmail] = useState<string>("");
