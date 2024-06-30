@@ -1,0 +1,88 @@
+.content-header {
+  width: calc(100% - 264px);
+}
+
+.dashboard-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 45px;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 32px;
+}
+
+.dashboard-title h2 {
+  color: #222;
+  margin: 0;
+  font-size: 16px;
+  padding: 15px 0 13px 23px;
+  font-weight: 600;
+}
+
+.dashboard-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1198px;
+  padding: 13px;
+  height: auto;
+}
+
+.dashboard-content {
+  width: 33.3%;
+  float: left;
+  padding: 10px;
+}
+
+.dashboard-card-box {
+  width: 100%;
+  line-height: 22px;
+  border: 1px solid #e6e6e6;
+}
+
+.dashboard-card-thumnail {
+  background-image: url("https://dfrlippt5ud4x.cloudfront.net/web/lv0_no_data.png");
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0 15px 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dashboard-card-content {
+  position: relative;
+  padding: 15px;
+  margin-top: -15%;
+  background: #fff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.dashboard-card-category {
+  color: #8d45ff;
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.dashboard-card-content h5 {
+  font-size: 18px;
+  height: 54px;
+  overflow: hidden;
+  color: #353535;
+  line-height: 26px;
+  margin: 0;
+}
+
+.dashboard-card-text {
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 300;
+  margin-top: 15px;
+  padding-top: 15px;
+  height: 88px;
+  overflow: hidden;
+  border-top: 1px solid #f0f0f0;
+  color: #808080;
+}

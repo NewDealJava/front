@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { AUTH, DASHBOARD, MAIN, TRANSACTION } from "constant";
+import Container from "layouts/Container";
+import Auth from "pages/Auth";
+import Dashboard from "pages/Dashboard";
+import Main from "pages/Main";
+import Transaction from "pages/transaction";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route element={<Container />}>
+        <Route path={AUTH()} element={<Auth />} />
+        <Route path={MAIN()} element={<Main />} />
+        <Route path={DASHBOARD()} element={<Dashboard />} />
+        <Route path={TRANSACTION()} element={<Transaction />} />
+      </Route>
+    </Routes>
   );
 }
 
